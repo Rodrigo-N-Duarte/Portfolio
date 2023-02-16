@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#textName {
+  font-size: 46px;
+  border-right: 2px solid black;
+  animation: piscaCursor 1s infinite normal steps(20),
+    digitando 3.5s 1s normal steps(20);
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@keyframes digitando {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 7em;
+  }
+}
+@keyframes piscaCursor {
+  from {
+    border-right-color: black;
+    width: fit-content;
+  }
+
+  to {
+    border-right-color: rgba(255, 255, 255, 0);
+    width: fit-content;
+  }
+}
+
+#homeArea {
+  background-color: white;
+  height: 100vh;
+}
+
+#nameArea {
+  margin-top: 30%;
+  max-height: 50%;
+  margin-left: 20%;
+  font-size: 34px;
+}
+
+#btnHomeArea {
+  margin-left: 20%;
+}
+
+#btnHomeArea a {
+  margin-right: 1%;
+  width: 110px;
+}
+
+#profileImage {
+  width: 60%;
+  margin-top: 15%;
+  margin-left: 15%;
+  border-radius: 100%;
+  border: 1px solid black;
+  padding: 2px;
+}
+
+#aboutArea {
+  background-color: rgb(246, 251, 255);
+  height: 50vh;
+}
+
+#iconAbout {
+  font-size: 50px;
+}
+
+#textAbout {
+  padding: 2%;
+  margin-left: 25%;
+  margin-top: 5%;
+  border: 1px solid rgba(128, 128, 128, 0.404);
+  border-radius: 10px;
+  text-align: justify;
+}
+
+#habilitiesArea {
+  background-color: rgb(247, 247, 247);
+  height: 40vh;
+}
+
+#habilitiesInfo {
+  padding-left: 7%;
+}
+
+#titleHabilities {
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+#iconHabilities i {
+  font-size: 100px;
+}
+
+#icons {
+  margin-left: 5%;
+}
+#icons div {
+  margin-left: 1.5%;
+}
+
+#iconHtml:hover {
+  color: orange;
+}
+#iconCSS:hover {
+  color: rgb(0, 208, 255);
+}
+#iconJS:hover {
+  color: rgb(255, 238, 0);
+}
+#iconReact:hover {
+  color: rgb(0, 242, 255);
+}
+#iconNode:hover {
+  color: rgb(22, 192, 0);
+}
+#iconBootstrap:hover {
+  color: rgb(183, 0, 255);
+}
+#iconDatabase:hover {
+  color: rgb(0, 183, 255);
+}
+#iconCSharp:hover {
+  color: rgb(209, 0, 185);
+}
+#projectsArea {
+  background-color: rgb(242, 242, 242);
+  height: 80vh;
+}
+
+#projectsTitle {
+  margin-left: 5%;
+  margin-bottom: 3%;
+}
+
+#projectsInfo {
+  margin-top: 3%;
+}
+
+#projectsArea .card {
+  text-align: center;
+  margin-left: 10%;
+}
+
+#contactArea {
+  background-color: rgb(242, 242, 242);
+  height: 10vh;
+  padding-top: 0.5%;
+  text-decoration: none;
+  color: black;
+}
+
+#contactArea a {
+  color: black;
+  margin-left: 100%;
+}
+
+#contactArea i {
+  font-size: 30px;
+}
+
+#contactIconWhastapp:hover {
+  color: rgb(0, 170, 0);
+}
+#contactIconInstagram:hover {
+  color: rgb(170, 0, 142);
+}
+#contactIconLinkedin:hover {
+  color: rgb(0, 77, 170);
+}
+#contactIconGitHub:hover {
+  color: rgb(56, 56, 56);
+}
+#contactIconEmail:hover {
+  color: rgb(170, 0, 156);
+}
+
+/*MOBILE MEDIA QUERY*/
+@media screen and (max-width: 1460px) {
+  #nameArea {
+    margin-left: 10%;
+  }
+
+  #btnHomeArea {
+    margin-left: 20%;
+  }
+
+  #btnHomeArea a {
+    margin-left: 2%;
+    width: 110px;
+  }
+
+  #textAbout {
+    padding: 2%;
+    margin-left: 1%;
+    margin-top: 5%;
+  }
+
+  #habilitiesArea {
+    height: 70vh;
+  }
+  #iconCSharp i {
+    font-size: 75px;
+  }
+  #projectsArea .card {
+    margin-bottom: 5%;
+  }
+  footer {
+    position: absolute;
+    bottom: -300%;
+    width: 100%;
+  }
+}
