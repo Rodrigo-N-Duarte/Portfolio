@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@700&display=swap");
 
+/*MOBILE FIRST*/
 * {
   margin: 0;
   padding: 0;
@@ -38,13 +39,11 @@
 
 #homeArea {
   background-color: white;
-  height: 100vh;
 }
 
 #nameArea {
   margin-top: 30%;
-  max-height: 50%;
-  margin-left: 20%;
+  margin-left: 10%;
   font-size: 34px;
 }
 
@@ -68,7 +67,6 @@
 
 #aboutArea {
   background-color: rgb(246, 251, 255);
-  height: 50vh;
 }
 
 #iconAbout {
@@ -77,7 +75,6 @@
 
 #textAbout {
   padding: 2%;
-  margin-left: 25%;
   margin-top: 5%;
   border: 1px solid rgba(128, 128, 128, 0.404);
   border-radius: 10px;
@@ -86,7 +83,6 @@
 
 #habilitiesArea {
   background-color: rgb(247, 247, 247);
-  height: 40vh;
 }
 
 #habilitiesInfo {
@@ -130,12 +126,14 @@
 #iconDatabase:hover {
   color: rgb(0, 183, 255);
 }
+#iconCSharp i {
+  font-size: 70px;
+}
 #iconCSharp:hover {
   color: rgb(209, 0, 185);
 }
 #projectsArea {
   background-color: rgb(242, 242, 242);
-  height: 80vh;
 }
 
 #projectsTitle {
@@ -150,11 +148,12 @@
 #projectsArea .card {
   text-align: center;
   margin-left: 10%;
+  margin-bottom: 5%;
 }
 
 #contactArea {
   background-color: rgb(242, 242, 242);
-  height: 10vh;
+  height: 50px;
   padding-top: 0.5%;
   text-decoration: none;
   color: black;
@@ -163,6 +162,7 @@
 #contactArea a {
   color: black;
   margin-left: 100%;
+  width: 100%;
 }
 
 #contactArea i {
@@ -185,39 +185,23 @@
   color: rgb(170, 0, 156);
 }
 
-/*MOBILE MEDIA QUERY*/
-@media screen and (max-width: 1460px) {
-  #nameArea {
-    margin-left: 10%;
-  }
-
-  #btnHomeArea {
-    margin-left: 20%;
-  }
-
-  #btnHomeArea a {
-    margin-left: 2%;
-    width: 110px;
-  }
-
+/*Large screens CSS*/
+@media screen and (min-width: 1000px) {
   #textAbout {
     padding: 2%;
-    margin-left: 1%;
     margin-top: 5%;
+    margin-left: 20%;
+    margin-bottom: 5%;
+    border: 1px solid rgba(128, 128, 128, 0.404);
+    border-radius: 10px;
+    text-align: justify;
   }
 
-  #habilitiesArea {
-    height: 70vh;
-  }
-  #iconCSharp i {
-    font-size: 75px;
-  }
-  #projectsArea .card {
+  #habilitiesInfo {
     margin-bottom: 5%;
   }
-  footer {
-    position: absolute;
-    bottom: -300%;
-    width: 100%;
+
+  #iconCSharp i {
+    font-size: 100px;
   }
 }
